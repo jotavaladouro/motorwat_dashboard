@@ -1,0 +1,10 @@
+Flask==1.0.2
+dash
+dash-core-components
+dash-html-components
+dash-renderer
+plotly
+numpy
+pandas
+pandas-gbq
+gunicorn
