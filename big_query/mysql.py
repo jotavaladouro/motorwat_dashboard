@@ -11,6 +11,14 @@ def connect_mysql():
     lconn = MySQLdb.connect(*datos)
     return lconn
 
+def close_mysql(lmysql_conn):
+    """
+    Close MySQLdb connection object
+    :param lmysql_conn: MySQLdb connection object
+    :return:
+    """
+    lmysql_conn.close()
+
 def get_sql_query(day_load, lindex):
     """
     Return a string quety to get data from a lane and from a list of days.

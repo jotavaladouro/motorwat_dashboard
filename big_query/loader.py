@@ -225,3 +225,5 @@ if __name__ == "__main__":
             load_day(day, args.online, mysql_conn, client)
     except KeyboardInterrupt:
         pass
+    mysql.close_mysql(mysql_conn)
+
